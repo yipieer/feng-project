@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#showBig {
+    padding: 80px 0 0 0;
+    position: absolute;
+    width: 100%;
+}
+
+.item img {
+    width: 100%;
+    height: 80px;
+}
+/*顶端条*/
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(00, 90, 00);
+    position: fixed;
+    z-index: 10;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    padding: 0 10px;
+}
+.logo1 img{
+    height: 30px;
+}
+
+
+/*导航*/
+.navi {
+    position: relative;
+    height: 80px;
+}
+
+.nav-title a {
+    font-size: 20px;
+    line-height: 80px;
+    display: block;
+    color: white;
+    padding: 0 25px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+/*导航底下的列表*/
+.nav-list {
+    position: absolute;
+    display: none;
+    width: 200px;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.9;
+}
+.nav-list ul {
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.navi:hover .nav-title a {
+    color: rgb(00, 90, 00);
+    background-color: white;
+}
+
+.navi:hover .nav-list {
+    display: block;
+
+}
+
+.nav-list a:hover {
+    background: rgb(00, 90, 00);
+    color: white;
+}
+/*登录*/
+.fab {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.fab-btn i {
+    color: white;
+    font-size: 40px;
+    transition: all 0.5s;
+}
+
+.fab:hover .fab-btn i {
+    transform: rotate(360deg);
+}
