@@ -1,0 +1,90 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.right-title{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.right-txt p{
+    text-indent: 2em;
+    color: black;
+}
+body, html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #b3b9bf;
+    background: #f9f9f9;
+}
+
+.grid {
+    list-style: none;
+}
+
+.grid li {
+    display: inline-block;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.grid figure {
+    position: relative;
+}
+
+.grid figure img {
+    width: 200px;
+    display: block;
+    position: relative;
+}
+
+.grid figcaption {
+    position: absolute;
+    background: rgba(00, 90, 00,0.8);
+}
+
+.grid figcaption span:before {
+    content: 'by ';
+}
+
+.cs-style-2 figure img {
+    z-index: 9;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.no-touch .cs-style-2 figure:hover img,
+.cs-style-2 figure.cs-hover img {
+    -webkit-transform: translateY(-90px);
+    -moz-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    transform: translateY(-90px);
+}
+
+.cs-style-2 figcaption {
+    height: 90px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-style-2 figcaption a {
+    position: absolute;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+  

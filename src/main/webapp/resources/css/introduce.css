@@ -8,7 +8,7 @@
 }
 .lefe-bar {
     width: 200px;
-    border: 1px salmon solid;
+    /*border: 1px salmon solid;*/
     position: relative;
     left: 110px;
     top: -40px;
@@ -21,7 +21,7 @@
     flex-direction: column;
     height: 100px;
     width: 200px;
-    border: 1px salmon solid;
+    /*border: 1px salmon solid;*/
     justify-content: center;
     align-items: center;
     background-color: rgba(00, 100, 00, 0.7);
@@ -30,7 +30,7 @@
 .left-title div {
     color: white;
     font-size: 20px;
-    border: 1px salmon solid;
+    /*border: 1px salmon solid;*/
 }
 
 .lefe-bar ul {
@@ -42,6 +42,8 @@
     background-color: gainsboro;
     padding: 30px 45px;
     text-decoration: none;
+    transition: all 0.5s;
+
 }
 
 .lefe-bar li a span {
@@ -52,6 +54,8 @@
 
 .lefe-bar a:hover {
     background: rgba(00, 100, 00, 0.7);
+    transform: translateX(8px);
+
 }
 
 .lefe-bar a:hover span {
@@ -60,7 +64,7 @@
 .right-content{
     position: relative;
     left: 150px;
-    border: 1px salmon solid;
+    /*border: 1px salmon solid;*/
     width: 60%;
     display: flex;
     flex-direction: column;

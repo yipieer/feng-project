@@ -1,7 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,20 +18,20 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../resources/css/index.css">
-    <link rel="stylesheet" href="../../resources/css/introduce.css">
-    <link rel="stylesheet" href="../../resources/css/lab.css">
-    <script src="../../resources/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/introduce.css">
+    <link rel="stylesheet" href="resources/css/lab.css">
+    <script src="resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
 <body>
 <div class="main">
     <nav class="topbar">
         <div class="logo">
-            <img src="../../resources/picture/logo.png">
+            <img src="resources/picture/logo.png">
         </div>
         <div class="logo1">
-            <img src="../../resources/picture/logo1.png">
+            <img src="resources/picture/logo1.png">
         </div>
         <div class="navi">
             <div class="nav-title">
@@ -46,13 +51,13 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">实验室</a>
+                <a href="Tolabindex">实验室</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">923创新实验室</a></li>
-                    <li><a href="">925移动开发实验室</a></li>
-                    <li><a href="">926实验室</a></li>
+                    <li><a href="Tolab1">923创新实验室</a></li>
+                    <li><a href="Tolab2">925移动开发实验室</a></li>
+                    <li><a href="Tolab3">926实验室</a></li>
                 </ul>
             </div>
         </div>
@@ -100,7 +105,7 @@
         </div>
     </nav>
     <div class="banner">
-        <img src="../../resources/picture/banner2.jpg">
+        <img src="resources/picture/banner2.jpg">
     </div>
     <div class="nei">
         <nav class="lefe-bar">
@@ -109,22 +114,21 @@
                 <div>Laboratory</div>
             </div>
             <ul>
-                <li><a href="Tob1"><span>923创新实验室</span></a></li>
-                <li><a href="Tob2"><span>925移动开发实验室</span></a></li>
-                <li><a href="Tob2"><span>926实验室</span></a></li>
+                <li><a href="Tolab1"><span>923创新实验室</span></a></li>
+                <li><a href="Tolab2"><span>925移动开发实验室</span></a></li>
+                <li><a href="Tolab3"><span>926实验室</span></a></li>
             </ul>
         </nav>
         <div class="right-content">
-            <div class="right-title">923创新实验室</div>
-            <img src="../../resources/picture/lab1.jpg" style="width:300px;padding: 20px"  >
+            <div class="right-title">926实验室</div>
+            <img src="resources/picture/lab3.jpg" style="width:300px;padding: 20px">
             <div class="right-txt">
-                <p>创新教育实验室提供的专业测评体系及数百门课题，可以让学生在研究性学习过程中进行专业认知和体验，为选科、选专业及确定未来发展方向奠定基础。</p>
-                <p>创新教育实验室所产出的研究性学习成果可作为学生参加新高考综合评价招生、自主招生和出国留学资质申请的学分依据，帮助学生更好地规划升学发展路径。</p>
+            <p>学院竭力为学生打造现代化教学平台，提供良好的学习环境，为学生的学习提供丰富的信息资源。经过多年的快速发展，学校各类信息系统逐渐丰富，数字化校园建设日趋完善，2017年建造了4间桌面云平台的计算机基础实验室。4间实验室总面积达690.2平方米，共有402台设备可供学生使用，主要承担全校各学院的计算机公共基础课程及相关专业的实验教学任务,另外每个学期还进行全国计算机等级考试及全国英语AB级考试。基础实验室的建成为我校各专业学生理论联系实际、掌握过硬的计算机技能提供了良好的实验环境。</p>
             </div>
         </div>
     </div>
     <nav class="footer">
-        <img src="../../resources/picture/footer.jpg">
+        <img src="resources/picture/footer.jpg">
         <div class="footbar">
             <div class="footbar-c"> @2018级软件工程专业3班 丰祎洁 web作业</div>
         </div>

@@ -48,11 +48,11 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">实验室</a>
+                <a href="Tolabindex">实验室</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">923创新实验室</a></li>
+                    <li><a href="Tolab1">923创新实验室</a></li>
                     <li><a href="">925移动开发实验室</a></li>
                     <li><a href="">926实验室</a></li>
                 </ul>
