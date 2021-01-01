@@ -64,7 +64,7 @@
 .right-content{
     position: relative;
     left: 150px;
-    /*border: 1px salmon solid;*/
+    border: 1px salmon solid;
     width: 60%;
     display: flex;
     flex-direction: column;

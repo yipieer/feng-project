@@ -1,7 +1,13 @@
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,20 +19,20 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../resources/css/index.css">
-    <link rel="stylesheet" href="../../resources/css/introduce.css">
-    <link rel="stylesheet" href="../../resources/css/teacher.css">
-    <script src="../../resources/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/introduce.css">
+    <link rel="stylesheet" href="resources/css/lab.css">
+    <script src="resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
 <body>
 <div class="main">
     <nav class="topbar">
         <div class="logo">
-            <img src="../../resources/picture/logo.png">
+            <img src="resources/picture/logo.png">
         </div>
         <div class="logo1">
-            <img src="../../resources/picture/logo1.png">
+            <img src="resources/picture/logo1.png">
         </div>
         <div class="navi">
             <div class="nav-title">
@@ -100,8 +106,9 @@
         </div>
     </nav>
     <div class="banner">
-        <img src="../../resources/picture/banner3.jpg">
+        <img src="resources/picture/banner3.jpg">
     </div>
+    <!--内容部分-->
     <div class="nei">
         <nav class="lefe-bar">
             <div class="left-title">
@@ -114,26 +121,22 @@
                 <li><a href="Toteacher3"><span>讲师</span></a></li>
             </ul>
         </nav>
-        <!--内容部分-->
         <div class="right-content">
-            <div class="right-title">教授</div>
+            <div class="right-title">教师队伍</div>
+            <img src="resources/picture/t7.jpg" style="width:400px;padding: 20px">
             <div class="right-txt">
-                <div class="kuai">
-                    <div class="teacherlist">
-                        <div class="tec-pic"
-                             style="background: url(../../resources/picture/t-sujianmin.jpg);background-position: 50%;background-size: 90%"></div>
-                        <div class="tec-txt">苏建民</div>
-                    </div>
-                    <div id="tec-detil">
-                        苏健民，教授，硕士，硕士生导师，软件工程一级学科带头人，省计算机学会嵌入式专委会委员。主要研究方向：自动控制、信号与信息处理。主持或参加科研、教学项目11项，科研与教学获奖11项，出版教材2部，发表论文32篇。
-                    </div>
-                </div>
+                <p>
+                    随着高等教育的快速发展，学校积极把握机遇，开拓创新，规范师资队伍建设和管理工作，加大师资队伍建设和人才培养力度，依托教育部各个层次人才计划，实施“名师英才工程”人才培养计划，大力支持教师培训、进修、国内外访学，大力引进国内外优秀人才，强化教师队伍服务和管理工作，建立健全教师考核机制，加强学术梯队建设，优化教师队伍职称、学历、学缘、年龄结构，提高教师队伍整体水平，师资队伍发展呈现良好态势。</p>
+                <p>
+                    学校目前专任教师1328人，其中教授280人，副教授550人，教授、副教授所占比例达62.5%；具有博士学位的教师724人，占教师总数的54.52%；具有硕士学位的教师512人，占教师总数的38.55%；合计硕士学位以上人员占93.07%；教师中外校毕业生比例占教师总数的70.12%。</p>
+                <p>
+                    在教师队伍中，一批中青年学者学术精湛、锐意创新，成为国内外具有重要影响的著名学者和学术带头人。其中，中国工程院院士2名，双聘院士5名，“长江学者”特聘教授4名，国家杰出青年基金获得者1名，新世纪优秀人才支持计划入选者32名，享受国务院政府特殊津贴专家33名，国家有突出贡献中青年专家3名，省部级有突出贡献中青年专家16名，全国“百千万人才工程”人选4名，“新世纪百千万工程”人选5名，龙江学者特聘教授10名、讲座教授3名、青年学者1名，全国优秀博士学位论文获得者3名。</p>
             </div>
         </div>
     </div>
     <!--内容部分结束-->
     <nav class="footer">
-        <img src="../../resources/picture/footer.jpg">
+        <img src="resources/picture/footer.jpg">
         <div class="footbar">
             <div class="footbar-c"> @2018级软件工程专业3班 丰祎洁 web作业</div>
         </div>
@@ -149,14 +152,6 @@
         },
         mouseleave: function () {
             $(this).children("div.fab-btn").children("a").children("i#b1").text("arrow_drop_down_circle");
-        }
-    })
-    $(".kuai").on({
-        mouseenter: function () {
-            $(this).children("#tec-detil").slideDown(1000);
-        },
-        mouseleave: function () {
-            $(this).children("#tec-detil").slideUp(1000);
         }
     })
 </script>

@@ -1,0 +1,32 @@
+.teacherlist{
+    /*border: salmon 1px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    box-shadow: 0 0 10px gray;
+    /*box-shadow: 0 0 10px gray;*/
+}
+.kuai{
+    border: salmon 1px solid;
+}
+.tec-pic{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px 40px;
+}
+.tec-txt{
+    font-size: 50px;
+    font-weight:500;
+    padding: 10px 40px;
+
+}
+#tec-detil{
+    width: 600px;
+    background: rgb(00, 90, 00);
+    color: white;
+    padding: 10px;
+}

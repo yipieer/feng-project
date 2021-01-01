@@ -11,6 +11,9 @@ public class News {
     private Timestamp insertTime;//插入时间
     private Timestamp currentTime;//当前时间
 
+    public News() {
+    }
+
     public News(int id, String name, String editor, String context, Timestamp insertTime, Timestamp currentTime) {
         this.id = id;
         this.name = name;

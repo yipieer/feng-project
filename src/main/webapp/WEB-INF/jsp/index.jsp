@@ -53,14 +53,14 @@
             <div class="nav-list">
                 <ul>
                     <li><a href="Tolab1">923创新实验室</a></li>
-                    <li><a href="">925移动开发实验室</a></li>
-                    <li><a href="">926实验室</a></li>
+                    <li><a href="Tolab2">925移动开发实验室</a></li>
+                    <li><a href="Tolab3">926实验室</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">教师队伍</a>
+                <a href="Totindex">教师队伍</a>
             </div>
             <div class="nav-list">
                 <ul>
@@ -94,7 +94,7 @@
         <!--登录-->
         <div class="fab">
             <div class="fab-btn">
-                <a>
+                <a href="admin">
                     <i class="material-icons" id="b1">arrow_drop_down_circle</i>
                 </a>
 
@@ -192,6 +192,7 @@
                                     pattern="yyyy-MM-dd HH:mm"
                                     value="${u.currentTime}"/></span>
                             <br>
+                            <a href="/news?flag=find&id=${u.id}">${u.name}</a>
                             <span>${u.name}</span>
                         </li>
 

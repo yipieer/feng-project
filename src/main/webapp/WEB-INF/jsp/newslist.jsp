@@ -1,7 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,9 +18,9 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../resources/css/index.css">
-    <link rel="stylesheet" href="../../resources/css/introduce.css">
-    <link rel="stylesheet" href="../../resources/css/teacher.css">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/introduce.css">
+    <link rel="stylesheet" href="resources/css/teacher.css">
     <script src="../../resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
@@ -23,10 +28,10 @@
 <div class="main">
     <nav class="topbar">
         <div class="logo">
-            <img src="../../resources/picture/logo.png">
+            <img src="resources/picture/logo.png">
         </div>
         <div class="logo1">
-            <img src="../../resources/picture/logo1.png">
+            <img src="resources/picture/logo1.png">
         </div>
         <div class="navi">
             <div class="nav-title">
@@ -99,41 +104,27 @@
             </div>
         </div>
     </nav>
-    <div class="banner">
-        <img src="../../resources/picture/banner3.jpg">
-    </div>
-    <div class="nei">
-        <nav class="lefe-bar">
-            <div class="left-title">
-                <div>教师队伍</div>
-                <div>Teachers</div>
-            </div>
+
+    <!--内容部分-->
+
+    <div class="Content_main_Out">
+        <div style="width: 100%" class="Content_main_in">
             <ul>
-                <li><a href="Toteacher1"><span>教授</span></a></li>
-                <li><a href="Toteacher2"><span>副教授</span></a></li>
-                <li><a href="Toteacher3"><span>讲师</span></a></li>
+                <c:forEach items="${news }" var="u" varStatus="v">
+                    <li>
+                <span>发布时间：<fmt:formatDate
+                        pattern="yyyy-MM-dd HH:mm"
+                        value="${u.currentTime}"/></span>
+                    <a href="/news?flag=find&id=${u.id}">${u.name}</a>
+                </span>
+                    </li>
+                </c:forEach>
             </ul>
-        </nav>
-        <!--内容部分-->
-        <div class="right-content">
-            <div class="right-title">教授</div>
-            <div class="right-txt">
-                <div class="kuai">
-                    <div class="teacherlist">
-                        <div class="tec-pic"
-                             style="background: url(../../resources/picture/t-sujianmin.jpg);background-position: 50%;background-size: 90%"></div>
-                        <div class="tec-txt">苏建民</div>
-                    </div>
-                    <div id="tec-detil">
-                        苏健民，教授，硕士，硕士生导师，软件工程一级学科带头人，省计算机学会嵌入式专委会委员。主要研究方向：自动控制、信号与信息处理。主持或参加科研、教学项目11项，科研与教学获奖11项，出版教材2部，发表论文32篇。
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!--内容部分结束-->
     <nav class="footer">
-        <img src="../../resources/picture/footer.jpg">
+        <img src="resources/picture/footer.jpg">
         <div class="footbar">
             <div class="footbar-c"> @2018级软件工程专业3班 丰祎洁 web作业</div>
         </div>

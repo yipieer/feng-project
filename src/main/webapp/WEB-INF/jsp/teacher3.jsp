@@ -1,7 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,9 +18,9 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../resources/css/index.css">
-    <link rel="stylesheet" href="../../resources/css/introduce.css">
-    <link rel="stylesheet" href="../../resources/css/teacher.css">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/introduce.css">
+    <link rel="stylesheet" href="resources/css/teacher.css">
     <script src="../../resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
@@ -23,10 +28,10 @@
 <div class="main">
     <nav class="topbar">
         <div class="logo">
-            <img src="../../resources/picture/logo.png">
+            <img src="resources/picture/logo.png">
         </div>
         <div class="logo1">
-            <img src="../../resources/picture/logo1.png">
+            <img src="resources/picture/logo1.png">
         </div>
         <div class="navi">
             <div class="nav-title">
@@ -100,7 +105,7 @@
         </div>
     </nav>
     <div class="banner">
-        <img src="../../resources/picture/banner3.jpg">
+        <img src="resources/picture/banner3.jpg">
     </div>
     <div class="nei">
         <nav class="lefe-bar">
@@ -133,7 +138,7 @@
     </div>
     <!--内容部分结束-->
     <nav class="footer">
-        <img src="../../resources/picture/footer.jpg">
+        <img src="resources/picture/footer.jpg">
         <div class="footbar">
             <div class="footbar-c"> @2018级软件工程专业3班 丰祎洁 web作业</div>
         </div>
