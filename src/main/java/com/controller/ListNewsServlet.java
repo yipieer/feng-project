@@ -19,16 +19,14 @@ public class ListNewsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 实现加载全部新闻，并转发至/WEB-INF/jsp/newslist.jsp
         req.setAttribute("news", newsService.listNewss());
-        //读取全部转发到news.jsp页面
-        req.getRequestDispatcher("/WEB-INF/jsp/newslist.jsp")
+        req.getRequestDispatcher("/WEB-INF/jsp/mannews.jsp")
                 .forward(req, resp);
-
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //新闻查看
         req.setAttribute("news", newsService.listNewss());
-        req.getRequestDispatcher("/WEB-INF/jsp/newslist.jsp")
+        req.getRequestDispatcher("/WEB-INF/jsp/mannews.jsp")
                 .forward(req, resp);
     }
 }

@@ -1,0 +1,30 @@
+ * {
+      padding: 0px;
+      margin: 0;
+  }
+
+.containers {
+    display: flex;
+}
+.input-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.input-content2{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    width: 80%;
+}
+
+.main p {
+
+    text-align: justify;
+}
+.input-content3{
+    padding: 10px;
+    text-align: right;
+}

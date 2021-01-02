@@ -1,24 +1,29 @@
 package com.entity;
 
 import java.sql.Timestamp;
-import java.text.DateFormat;
 
 public class News {
     private int id;//新闻编号
     private String name;//新闻名称
     private String editor;//编辑
-    private String context;//内容
+    private String content;//内容
     private Timestamp insertTime;//插入时间
     private Timestamp currentTime;//当前时间
 
     public News() {
     }
 
+    public News(String name, String editor, String content) {
+        this.name = name;
+        this.editor = editor;
+        this.content = content;
+    }
+
     public News(int id, String name, String editor, String context, Timestamp insertTime, Timestamp currentTime) {
         this.id = id;
         this.name = name;
         this.editor = editor;
-        this.context = context;
+        this.content = context;
         this.insertTime = insertTime;
         this.currentTime = currentTime;
     }
@@ -28,18 +33,25 @@ public class News {
         this.name = name;
     }
 
+    public News(int id, String name, String editor, String content) {
+        this.id = id;
+        this.name = name;
+        this.editor = editor;
+        this.content = content;
+    }
+
     public News(int id, String name, String editor, String context, Timestamp currentTime) {
         this.id = id;
         this.name = name;
         this.editor = editor;
-        this.context = context;
+        this.content = context;
         this.currentTime = currentTime;
     }
 
     public News(String name, String editor, String context, Timestamp insertTime, Timestamp currentTime) {
         this.name = name;
         this.editor = editor;
-        this.context = context;
+        this.content = context;
         this.insertTime = insertTime;
         this.currentTime = currentTime;
     }
@@ -47,7 +59,7 @@ public class News {
     public News(String name, String editor, String context, Timestamp currentTime) {
         this.name = name;
         this.editor = editor;
-        this.context = context;
+        this.content = context;
         this.currentTime = currentTime;
     }
 
@@ -75,12 +87,12 @@ public class News {
         this.editor = editor;
     }
 
-    public String getContext() {
-        return context;
+    public String getContent() {
+        return content;
     }
 
-    public void setContext(String context) {
-        this.context = context;
+    public void setContent(String context) {
+        this.content = context;
     }
 
     public Timestamp getInsertTime() {

@@ -29,7 +29,7 @@
 }
 
 .logo {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .logo1 img {
@@ -48,7 +48,7 @@
     line-height: 80px;
     display: block;
     color: white;
-    padding: 0 20px;
+    padding: 0 10px ;
     text-decoration: none;
     transition: all 0.5s;
 }
@@ -95,6 +95,7 @@
     display: block;
     text-align: center;
     margin: 0 20px;
+    margin-left: auto;
 }
 
 .fab-btn i {

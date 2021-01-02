@@ -33,17 +33,15 @@ public class NewsServiceImpl implements NewsService {
 
     @Override
     public void addNews(News news) {
-        String sql = "INSERT INTO News(name, insertTime, currentTime,editor,content) VALUES(?,?,?,?,?)";
-        logger.info("准备执行sql语句");
-        //System.out.print(news.getName()+news.getShowTime()+news.getInsertTime()+news.getContent());
-        //INSERT INTO `news` (`name`, `Insert_Time`, `Show_Time`, `editor`, `content`) VALUES ('232', '2019-11-13 12:04:06', '2019-11-20 12:04:09', '23', '23')
+        String sql = "INSERT INTO news(name,insertTime,currentTime,editor,content) VALUES(?,?,?,?,?)";
+        logger.info("准备开始添加");
         try (Connection conn = DataSourceUtils.getConnection();
              PreparedStatement st = conn.prepareStatement(sql)) {
             st.setString(1, news.getName());
             st.setTimestamp(2, Timestamp.valueOf(LocalDateTime.now()));
-            st.setTimestamp(3, news.getCurrentTime());
+            st.setTimestamp(3, Timestamp.valueOf(LocalDateTime.now()));
             st.setString(4, news.getEditor());
-            st.setString(5, news.getContext());
+            st.setString(5, news.getContent());
             st.executeUpdate();
         } catch (SQLException e) {
             logger.warning(e.getMessage());
@@ -51,10 +49,21 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public void updateNews(News News) {
-
+    public void updateNews(News news) {
+        String sql = "update news set name =?,editor = ?,currentTime = ?,content=? WHERE id = ?;";
+        try (Connection conn = DataSourceUtils.getConnection();
+             PreparedStatement st = conn.prepareStatement(sql)) {
+            st.setString(1, news.getName());
+            st.setString(2, news.getEditor());
+            st.setTimestamp(3, Timestamp.valueOf(LocalDateTime.now()));
+            st.setString(4, news.getContent());
+            st.setInt(5, news.getId());
+            st.executeUpdate();
+        } catch (SQLException e) {
+            logger.warning(e.getMessage() + "修改数据失败");
+        }
     }
-
+//ok
     @Override
     public News getNews(int id) {
         News news = new News();
@@ -72,10 +81,19 @@ public class NewsServiceImpl implements NewsService {
         }
         return news;
     }
+//ok
 
     @Override
     public void delNews(int id) {
-
+        String sql = "delete from news where id=?";
+        try (Connection conn = DataSourceUtils.getConnection();
+             PreparedStatement st = conn.prepareStatement(sql)) {
+            st.setInt(1, id);
+            st.executeUpdate();
+            logger.info("管理员删除新闻，删除的新闻id是" + id);
+        } catch (SQLException e) {
+            logger.warning(e.getMessage() + "删除失败");
+        }
     }
 
     @Override

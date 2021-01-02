@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
     <link rel="stylesheet" href="resources/css/teacher.css">
-    <script src="../../resources/js/modernizr.custom.js"></script>
+    <script src="resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -110,12 +110,12 @@
     <div class="Content_main_Out">
         <div style="width: 100%" class="Content_main_in">
             <ul>
-                <c:forEach items="${news }" var="u" varStatus="v">
+                <c:forEach items="${news}" var="u" varStatus="v">
                     <li>
                 <span>发布时间：<fmt:formatDate
                         pattern="yyyy-MM-dd HH:mm"
                         value="${u.currentTime}"/></span>
-                    <a href="/news?flag=find&id=${u.id}">${u.name}</a>
+                    <a href="news?flag=find&id=${u.id}">${u.name}</a>
                 </span>
                     </li>
                 </c:forEach>

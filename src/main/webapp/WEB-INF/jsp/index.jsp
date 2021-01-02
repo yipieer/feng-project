@@ -64,9 +64,9 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">教授</a></li>
-                    <li><a href="">副教授</a></li>
-                    <li><a href="">讲师</a></li>
+                    <li><a href="Toteacher1">教授</a></li>
+                    <li><a href="Toteacher2">副教授</a></li>
+                    <li><a href="Toteacher3">讲师</a></li>
                 </ul>
             </div>
         </div>
@@ -118,7 +118,7 @@
                 <img src="resources/picture/轮播2.jpg" alt="Second slide">
             </div>
             <div class="item">
-                <img src="resources/picture/img.png" alt="Third slide">
+                <img src="resources/picture/show.jpg" alt="Third slide">
             </div>
         </div>
         <!-- 轮播导航 -->
@@ -192,7 +192,7 @@
                                     pattern="yyyy-MM-dd HH:mm"
                                     value="${u.currentTime}"/></span>
                             <br>
-                            <a href="/news?flag=find&id=${u.id}">${u.name}</a>
+                            <a href="news?flag=find&id=${u.id}">${u.name}</a>
                             <span>${u.name}</span>
                         </li>
 

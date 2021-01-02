@@ -20,10 +20,8 @@ public class AccountServiceImpl implements AccountService {
         try {
             Connection connection = DataSourceUtils.getConnection();
             PreparedStatement st = connection.prepareStatement(sql);
-
             st.setString(1, accounts.getUserName());
             st.setString(2, accounts.getPassword());
-
             ResultSet rs = st.executeQuery();
             while (rs.next()) {
                 return true;

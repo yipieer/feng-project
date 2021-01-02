@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;
+}
 .banner img {
     width: 100%;
     opacity: 70%;
@@ -7,10 +15,10 @@
     flex-direction: row;
 }
 .lefe-bar {
-    width: 200px;
+    width: 15%;
     /*border: 1px salmon solid;*/
     position: relative;
-    left: 110px;
+    left: 10%;
     top: -40px;
     display: flex;
     flex-direction: column;
@@ -20,7 +28,7 @@
     display: flex;
     flex-direction: column;
     height: 100px;
-    width: 200px;
+    width: 100%;
     /*border: 1px salmon solid;*/
     justify-content: center;
     align-items: center;

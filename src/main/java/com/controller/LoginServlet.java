@@ -16,7 +16,6 @@ public class LoginServlet extends HttpServlet {
 
     private AccountService accountService = ServiceFactory.getAccountService();
 
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("/WEB-INF/jsp/accountIndex.jsp").forward(req, resp);

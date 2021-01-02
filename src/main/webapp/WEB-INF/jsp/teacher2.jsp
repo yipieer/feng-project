@@ -166,10 +166,10 @@
     })
     $(".kuai").on({
         mouseenter: function () {
-            $(this).children("#tec-detil").slideDown(1000);
+            $(this).children(".tec-detil").slideDown(1000);
         },
         mouseleave: function () {
-            $(this).children("#tec-detil").slideUp(1000);
+            $(this).children(".tec-detil").slideUp(1000);
         }
     })
 </script>

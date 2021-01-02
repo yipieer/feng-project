@@ -1,4 +1,5 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,7 @@
         <div class="single_news_content_in_date">
             <fmt:formatDate value="${news.currentTime}" pattern="yyyy-MM-dd"/>
         </div>
-        ${news.context}
+        ${news.content}
     </div>
 </div>
 </body>

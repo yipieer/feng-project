@@ -129,7 +129,7 @@
                              style="background: url(resources/picture/t-sujianmin.jpg);background-position: 50%;background-size: 90%"></div>
                         <div class="tec-txt">苏建民</div>
                     </div>
-                    <div id="tec-detil">
+                    <div class="tec-detil">
                         苏健民，教授，硕士，硕士生导师，软件工程一级学科带头人，省计算机学会嵌入式专委会委员。主要研究方向：自动控制、信号与信息处理。主持或参加科研、教学项目11项，科研与教学获奖11项，出版教材2部，发表论文32篇。
                     </div>
                 </div>
@@ -158,10 +158,10 @@
     })
     $(".kuai").on({
         mouseenter: function () {
-            $(this).children("#tec-detil").slideDown(1000);
+            $(this).children(".tec-detil").slideDown(1000);
         },
         mouseleave: function () {
-            $(this).children("#tec-detil").slideUp(1000);
+            $(this).children(".tec-detil").slideUp(1000);
         }
     })
 </script>

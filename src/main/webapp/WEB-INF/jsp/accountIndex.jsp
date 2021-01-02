@@ -6,85 +6,49 @@
 <head>
     <c:url var="base" value="/"/>
     <base href="${base}">
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
-    <title>在线管理系统</title>
-
-    <!--Bootstraponline-->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <style>
-        .center{
-            width: 30%;
-        }
-        .alert{
-            width: fit-content;
-            margin-left: 2%;
-        }
-        .tips h2{
-            margin: 1% 1%;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>管理员登录</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/login.css" id="theme-stylesheet">
 </head>
 <body>
-<div class="jumbotron">
-    <h1 class="display-4">Hello, Admin!</h1>
-    <p class="lead">
-        这里是东北林业大学软件工程专业网站内容管理平台</p>
-    <hr class="my-4">
-    <p>请使用管理员账号登录并进行操作</p>
-    <div class="center">
-        <form action="admin" method="post">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="username">账号</span>
+<div class="page login-page" style="background-image: url(resources/picture/show.jpg);" >
+    <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="info d-flex align-items-center">
+                        <div class="content">
+                            <div class="logo">
+                                <h1>欢迎登录</h1>
+                            </div>
+                            <p>东北林业大学信息与计算机工程学院软件工程专业</p>
+                            <p>信息管理系统</p>
+                        </div>
+                    </div>
                 </div>
-                <input name="username" type="text" class="form-control" placeholder="请输入账号" aria-label="Username"
-                       aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="password">密码</span>
+                <div class="col-lg-6 bg-white">
+                    <div class="form d-flex align-items-center">
+                        <div class="content">
+                            <form method="post" action="admin" class="form-validate" id="loginFrom">
+                                <div class="form-group">
+                                    <input id="login-username" type="text" name="username" required data-msg="请输入用户名" placeholder="用户名" value="admin" class="input-material">
+                                </div>
+                                <div class="form-group">
+                                    <input id="login-password" type="password" name="pwd" required data-msg="请输入密码" placeholder="密码" class="input-material">
+                                </div>
+                                <button id="login" type="submit" class="btn">登录</button>
+                            </form>
+                            <br />
+                        </div>
+                    </div>
                 </div>
-                <input name="pwd" type="password" class="form-control" placeholder="请输入密码" aria-label="password"
-                       aria-describedby="basic-addon1">
-
             </div>
-            <button type="submit" class="btn btn-primary">登录</button>
-        </form>
-    </div>
-
-</div>
-<div class="tips">
-    <h2>管理员上传提示<span class="badge badge-secondary">Tips</span></h2>
-    <div class="alert alert-primary" role="alert">
-        注意新闻上传中的脚本注入!
-    </div>
-    <div class="alert alert-danger" role="alert">
-        严禁发布涉密相关信息!
-    </div>
-    <div class="alert alert-secondary" role="alert">
-        该页面完全基于Bootstrap4，是关于Bootstrap的学习内容!
-    </div>
-    <div class="alert alert-success" role="alert">
-        A simple success alert—check it out!
-    </div>
-    <div class="alert alert-warning" role="alert">
-        A simple warning alert—check it out!
-    </div>
-    <div class="alert alert-info" role="alert">
-        A simple info alert—check it out!
-    </div>
-    <div class="alert alert-light" role="alert">
-        A simple light alert—check it out!
-    </div>
-    <div class="alert alert-dark" role="alert">
-        A simple dark alert—check it out!
+        </div>
     </div>
 </div>
 </body>

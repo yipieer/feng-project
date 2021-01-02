@@ -1,15 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .teacherlist{
     /*border: salmon 1px solid;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: 500px;
     box-shadow: 0 0 10px gray;
     /*box-shadow: 0 0 10px gray;*/
 }
 .kuai{
     border: salmon 1px solid;
+    margin-bottom: 10px;
 }
 .tec-pic{
     width: 150px;
@@ -24,8 +30,8 @@
     padding: 10px 40px;
 
 }
-#tec-detil{
-    width: 600px;
+.tec-detil{
+    width: 500px;
     background: rgb(00, 90, 00);
     color: white;
     padding: 10px;

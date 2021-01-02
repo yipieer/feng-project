@@ -13,14 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * 对所有地址的请求进行拦截
- * 然后循环过滤
- */
 @WebFilter("/*")
 public class LoginFilter extends HttpFilter {
 
-    private List<String> include = List.of();
+    private List<String> include = List.of("/info", "/addNews", "/add");
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
@@ -31,7 +27,7 @@ public class LoginFilter extends HttpFilter {
                     chain.doFilter(req, res);
                     return;
                 } else {
-                    res.sendRedirect("");//如果没有登录 则重定向
+                    res.sendRedirect("/admin");
                     return;
                 }
             }

@@ -2,14 +2,10 @@ package com.entity;
 
 import java.util.Objects;
 
-/**
- * 账户实体类
- * 有用户名 和密码两个属性
- */
 public class Accounts {
 
-    private String userName;
-    private String password;
+    private String userName;//用户名
+    private String password;//密码
 
     public String getUserName() {
         return userName;
