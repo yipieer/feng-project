@@ -32,7 +32,7 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="ToIndex">首页</a>
+                <a href="index">首页</a>
             </div>
         </div>
         <div class="navi">
@@ -190,7 +190,7 @@
                         <li>
                             <span>发布时间：<fmt:formatDate
                                     pattern="yyyy-MM-dd HH:mm"
-                                    value="${u.currentTime}"/></span>
+                                    value="${u.insertTime}"/></span>
                             <br>
                             <a href="news?flag=find&id=${u.id}">${u.name}</a>
                             <span>${u.name}</span>

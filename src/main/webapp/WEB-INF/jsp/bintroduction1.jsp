@@ -33,7 +33,7 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="ToIndex">首页</a>
+                <a href="index">首页</a>
             </div>
         </div>
         <div class="navi">

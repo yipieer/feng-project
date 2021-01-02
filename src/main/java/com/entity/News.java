@@ -8,7 +8,7 @@ public class News {
     private String editor;//编辑
     private String content;//内容
     private Timestamp insertTime;//插入时间
-    private Timestamp currentTime;//当前时间
+    private Timestamp currentTime;//修改时间
 
     public News() {
     }
