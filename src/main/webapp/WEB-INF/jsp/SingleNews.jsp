@@ -11,12 +11,12 @@
 <div class="single_news_content_out">
     <div class="single_news_content_in">
         <div class="single_news_content_in_name">
-            ${news.name}
+           新闻名字： ${news.name}
         </div>
         <div class="single_news_content_in_date">
-            <fmt:formatDate value="${news.currentTime}" pattern="yyyy-MM-dd"/>
+            插入时间：<fmt:formatDate value="${news.currentTime}" pattern="yyyy-MM-dd"/>
         </div>
-        ${news.content}
+        新闻内容：${news.content}
     </div>
 </div>
 </body>

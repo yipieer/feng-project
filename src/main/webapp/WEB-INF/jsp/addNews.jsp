@@ -25,9 +25,9 @@
 
     <nav>
         <ul>
-            <li><a href=""><i class="material-icons">add_circle_outline</i><span>新增新闻</span></a></li>
-            <li><a href=""><i class="material-icons">arrow_back</i><span>回到首页</span></a></li>
-            <li><a href=""><i class="material-icons">close</i><span>退出登录</span></a></li>
+            <li><a href="add"><i class="material-icons">add_circle_outline</i><span>新增新闻</span></a></li>
+            <li><a href="index"><i class="material-icons">arrow_back</i><span>回到首页</span></a></li>
+            <li><a href="admin"><i class="material-icons">close</i><span>退出登录</span></a></li>
         </ul>
 
     </nav>

@@ -17,8 +17,14 @@ public class ListNewsServlet extends HttpServlet {
     private NewsService newsService = ServiceFactory.getNewsService();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String xwmc = req.getParameter("xwmc")==null?"":req.getParameter("xwmc");
+        if(xwmc.equals("")){
+            req.setAttribute("news", newsService.listNewss());
+        }else{
+            req.setAttribute("news", newsService.listNewss(xwmc));
+        }
+
         // 实现加载全部新闻，并转发至/WEB-INF/jsp/newslist.jsp
-        req.setAttribute("news", newsService.listNewss());
         req.getRequestDispatcher("/WEB-INF/jsp/mannews.jsp")
                 .forward(req, resp);
     }

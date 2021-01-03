@@ -149,7 +149,7 @@
     <nav class="footer">
         <img src="resources/picture/footer.jpg">
         <div class="footbar">
-            <div class="footbar-c"> @2018级软件工程专业3班 丰祎洁 web作业</div>
+            <div class="footbar-c">@2018级软件工程专业3班 丰祎洁 web作业</div>
         </div>
     </nav>
 </div>

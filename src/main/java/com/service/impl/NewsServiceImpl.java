@@ -30,6 +30,24 @@ public class NewsServiceImpl implements NewsService {
 //        req.setAttribute("news", news);
         return news;
     }
+//查询
+    @Override
+    public List<News> listNewss(String xwmc) {
+        List<News> news = new ArrayList<>();
+        String sql = "select * from news where name like"+"'%"+xwmc+"%'";
+        try (Connection connection = DataSourceUtils.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql);
+             ResultSet rs = statement.executeQuery()) {
+            while (rs.next()) {
+                News news1 = new News(rs.getInt("id"), rs.getString("name"), rs.getString("editor"), rs.getString("content"), rs.getTimestamp("insertTime"), rs.getTimestamp("currentTime"));
+                news.add(news1);
+            }
+        } catch (SQLException troubles) {
+            troubles.printStackTrace();
+        }
+//        req.setAttribute("news", news);
+        return news;
+    }
 
     @Override
     public void addNews(News news) {
@@ -68,9 +86,8 @@ public class NewsServiceImpl implements NewsService {
     public News getNews(int id) {
         News news = new News();
         String sql = "select * from news where id=?";
-        try {
-            Connection connection = DataSourceUtils.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        try (Connection connection = DataSourceUtils.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(sql)){
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {

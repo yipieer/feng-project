@@ -15,6 +15,23 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/mannews.css">
+
+    <script>
+        function btn(){
+            $.ajax({
+                url:"index.php",
+                type:"post",
+                data:{username:username},
+                dataType:"json",
+                success:function(a){
+                    alert(a)
+                },
+                error:function(e){
+                    alert("错误");
+                }
+            });
+        }
+    </script>
 </head>
 <body>
 
@@ -23,7 +40,7 @@
     <nav>
         <ul>
             <li><a href="add"><i class="material-icons">add_circle_outline</i><span>新增新闻</span></a></li>
-            <li><a href="ToIndex"><i class="material-icons">arrow_back</i><span>回到首页</span></a></li>
+            <li><a href="index"><i class="material-icons">arrow_back</i><span>回到首页</span></a></li>
             <li><a href="admin"><i class="material-icons">close</i><span>退出登录</span></a></li>
         </ul>
 
@@ -34,10 +51,13 @@
         <h1>欢迎您！管理员</h1>
         <h2>欢迎来到东北林业大学新闻管理系统</h2>
         <div style="padding: 10px">
-            <form action="" method="post">
+            <form action="listnew" method="post">
                 <input type="hidden" name="flag" value="">
                 <input type="hidden" name="id" value="">
+                <input value="" placeholder="请输入要搜索的内容" type="text" name="xwmc" id="xwmc">
+                <input type="submit" value="搜索">
             </form>
+
             <table>
                 <thead>
                 <tr>

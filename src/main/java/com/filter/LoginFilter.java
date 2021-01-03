@@ -16,23 +16,22 @@ import java.util.List;
 @WebFilter("/*")
 public class LoginFilter extends HttpFilter {
 
-    private List<String> include = List.of("/info", "/addNews", "/add");
+    private List<String> include = List.of("/info");
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         for (String in : include) {
             if (in.equals(req.getServletPath())) {
-                Accounts accounts = (Accounts) req.getSession().getAttribute("account");
-                if (accounts != null) {
-                    chain.doFilter(req, res);
-                    return;
-                } else {
-                    res.sendRedirect("/admin");
-                    return;
-                }
+                chain.doFilter(req, res);
+                return;
             }
         }
-        chain.doFilter(req, res);
-        return;
+        Accounts accounts = (Accounts) req.getSession().getAttribute("account");
+        if (accounts != null) {
+            chain.doFilter(req, res);
+        } else {
+            res.sendRedirect("/admin");
+        }
     }
 }
+

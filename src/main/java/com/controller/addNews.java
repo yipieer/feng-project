@@ -34,7 +34,7 @@ public class addNews extends HttpServlet {
         }//否则为修改
         else {
             int id = Integer.parseInt(req.getParameter("id"));
-            News news = new News(id, title, content, editor);
+            News news = new News(id, title, editor,content);
             newsService.updateNews(news);
         }
         resp.sendRedirect(req.getContextPath() + "/listnew");

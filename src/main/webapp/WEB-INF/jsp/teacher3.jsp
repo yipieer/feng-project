@@ -121,16 +121,45 @@
         </nav>
         <!--内容部分-->
         <div class="right-content">
-            <div class="right-title">教授</div>
+            <div class="right-title">讲师</div>
             <div class="right-txt">
                 <div class="kuai">
                     <div class="teacherlist">
                         <div class="tec-pic"
-                             style="background: url(../../resources/picture/t-sujianmin.jpg);background-position: 50%;background-size: 90%"></div>
-                        <div class="tec-txt">苏建民</div>
+                             style="background: url(resources/picture/t-wangbo.jpg);background-position: 50%;background-size: 90%"></div>
+                        <div class="tec-txt">王&emsp;波</div>
                     </div>
-                    <div id="tec-detil">
-                        苏健民，教授，硕士，硕士生导师，软件工程一级学科带头人，省计算机学会嵌入式专委会委员。主要研究方向：自动控制、信号与信息处理。主持或参加科研、教学项目11项，科研与教学获奖11项，出版教材2部，发表论文32篇。
+                    <div class="tec-detil">
+                        王波，讲师，硕士。主要研究方向：计算数学，软件开发。发表学术论文3篇。
+                    </div>
+                </div>
+                <div class="kuai">
+                    <div class="teacherlist">
+                        <div class="tec-pic"
+                             style="background: url(resources/picture/t-liyan.jpg);background-position: 50%;background-size: 90%"></div>
+                        <div class="tec-txt">李&emsp;琰</div>
+                    </div>
+                    <div class="tec-detil">
+                        李琰，讲师，主要研究方向：软件工程，遥感和林业信息。参与科研项目多项，参编教材1部，并发表部分相关论文。
+                    </div>
+                </div>
+                <div class="kuai">
+                    <div class="teacherlist">
+                        <div class="tec-pic"
+                             style="background: url(resources/picture/t-shanying.png);background-position: 50%;background-size: 90%"></div>
+                        <div class="tec-txt">单&emsp;颖</div>
+                    </div>
+                    <div class="tec-detil">
+                        单颖，博士，讲师，主要研究方向：软件工程，林业信息。参与科研项目多项，并发表相关论文。</div>
+                </div>
+                <div class="kuai">
+                    <div class="teacherlist">
+                        <div class="tec-pic"
+                             style="background: url(resources/picture/t-bian.jpg);background-position: 50%;background-size: 90%"></div>
+                        <div class="tec-txt">边继龙</div>
+                    </div>
+                    <div class="tec-detil">
+                        边继龙，博士，讲师。主要研究方向：立体匹配、矢量地图压缩。曾参与或负责的科研项目包括：矢量地图版权保护技术研究、小基高比立体测绘图像匹配处理方法研究及十二五科研项目等。在国内外期刊上发表学术论文7篇，其中被EI收录5篇；申请发明专利3项。
                     </div>
                 </div>
             </div>
@@ -158,10 +187,10 @@
     })
     $(".kuai").on({
         mouseenter: function () {
-            $(this).children("#tec-detil").slideDown(1000);
+            $(this).children(".tec-detil").slideDown(1000);
         },
         mouseleave: function () {
-            $(this).children("#tec-detil").slideUp(1000);
+            $(this).children(".tec-detil").slideUp(1000);
         }
     })
 </script>

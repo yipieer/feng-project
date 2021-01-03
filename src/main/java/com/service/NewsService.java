@@ -11,6 +11,11 @@ public interface NewsService {
      */
     public List<News> listNewss();
     /**
+     * 查询全部新闻
+     * @return
+     */
+    public List<News> listNewss(String xwmc);
+    /**
      * 添加新闻
      * @param news
      */

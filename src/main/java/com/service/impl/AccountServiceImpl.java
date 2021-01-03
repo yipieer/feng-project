@@ -17,9 +17,8 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public boolean verification(Accounts accounts) {
         String sql = "SELECT * FROM account WHERE username=? AND password=?";
-        try {
-            Connection connection = DataSourceUtils.getConnection();
-            PreparedStatement st = connection.prepareStatement(sql);
+        try (Connection connection = DataSourceUtils.getConnection();
+             PreparedStatement st = connection.prepareStatement(sql)){
             st.setString(1, accounts.getUserName());
             st.setString(2, accounts.getPassword());
             ResultSet rs = st.executeQuery();
