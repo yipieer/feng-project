@@ -52,10 +52,11 @@
         <h2>欢迎来到东北林业大学新闻管理系统</h2>
         <div style="padding: 10px">
             <form action="listnew" method="post">
+                <%--用flag来看是点击的哪个按钮--%>
                 <input type="hidden" name="flag" value="">
                 <input type="hidden" name="id" value="">
                 <input value="" placeholder="请输入要搜索的内容" type="text" name="xwmc" id="xwmc">
-                <input type="submit" value="搜索">
+                <input type="submit" class="btn btn-info" value="搜索">
             </form>
 
             <table>
@@ -82,7 +83,7 @@
                     <td>
                         <form action="man" method="post">
                             <input type="hidden" name="id" value="${u.id}">
-                            <button name="flag" value="update" type="submit" class="btn btn-info">修改</button>
+                            <button name="flag" value="update" type="submit" class="btn btn-success">修改</button>
                             <button name="flag" value="delete" type="submit" class="btn btn-danger">删除</button>
                         </form>
                     </td>
