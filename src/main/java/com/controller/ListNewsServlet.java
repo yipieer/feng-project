@@ -13,7 +13,6 @@ import java.io.IOException;
 
 @WebServlet("/listnew")
 public class ListNewsServlet extends HttpServlet {
-    // 基于ServiceFactory工厂，获取单例的UserService组件
     private NewsService newsService = ServiceFactory.getNewsService();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,7 +23,6 @@ public class ListNewsServlet extends HttpServlet {
             req.setAttribute("news", newsService.listNewss(xwmc));
         }
 
-        // 实现加载全部新闻，并转发至/WEB-INF/jsp/newslist.jsp
         req.getRequestDispatcher("/WEB-INF/jsp/mannews.jsp")
                 .forward(req, resp);
     }

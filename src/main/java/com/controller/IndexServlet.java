@@ -25,7 +25,7 @@ public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<News> news = new ArrayList<>();
-        String sql = "select * from news";
+        String sql = "SELECT * FROM news";
         try (Connection connection = DataSourceUtils.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql);
              ResultSet rs = statement.executeQuery()) {
