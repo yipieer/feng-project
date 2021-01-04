@@ -28,7 +28,7 @@ public class NewsServiceImpl implements NewsService {
         return news;
     }
 
-    //查询
+
     @Override
     public List<News> listNewss(String xwmc) {
         List<News> news = new ArrayList<>();
@@ -78,7 +78,6 @@ public class NewsServiceImpl implements NewsService {
         }
     }
 
-    //ok
     @Override
     public News getNews(int id) {
         News news = new News();
@@ -96,7 +95,6 @@ public class NewsServiceImpl implements NewsService {
         }
         return news;
     }
-//ok
 
     @Override
     public void delNews(int id) {
@@ -110,8 +108,4 @@ public class NewsServiceImpl implements NewsService {
         }
     }
 
-    @Override
-    public List<News> findNews(String name) {
-        return null;
-    }
 }

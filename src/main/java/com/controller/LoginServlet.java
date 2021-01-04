@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userName = req.getParameter("username");
         String pwd = req.getParameter("pwd");
-        if (accountService.verification(new Accounts(userName, pwd))) {
+        if (accountService.AccountLogin(new Accounts(userName, pwd))) {
             Accounts account = new Accounts(userName, pwd);
             req.getSession().setAttribute("account", account);
             req.getRequestDispatcher("/listnew").forward(req, resp);//登录成功跳转

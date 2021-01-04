@@ -83,12 +83,12 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">新闻</a>
+                <a href="shown">新闻</a>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">公告</a>
+                <a href="shown">公告</a>
             </div>
         </div>
         <!--登录-->

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-@WebServlet("/info")
+@WebServlet("/man")
 public class operaNews extends HttpServlet {
     NewsService newsService = ServiceFactory.getNewsService();
     @Override

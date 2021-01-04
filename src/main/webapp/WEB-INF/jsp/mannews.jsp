@@ -16,22 +16,22 @@
     <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/mannews.css">
 
-    <script>
-        function btn(){
-            $.ajax({
-                url:"index.php",
-                type:"post",
-                data:{username:username},
-                dataType:"json",
-                success:function(a){
-                    alert(a)
-                },
-                error:function(e){
-                    alert("错误");
-                }
-            });
-        }
-    </script>
+<%--    <script>--%>
+<%--        function btn(){--%>
+<%--            $.ajax({--%>
+<%--                url:"index.php",--%>
+<%--                type:"post",--%>
+<%--                data:{username:username},--%>
+<%--                dataType:"json",--%>
+<%--                success:function(a){--%>
+<%--                    alert(a)--%>
+<%--                },--%>
+<%--                error:function(e){--%>
+<%--                    alert("错误");--%>
+<%--                }--%>
+<%--            });--%>
+<%--        }--%>
+<%--    </script>--%>
 </head>
 <body>
 
@@ -73,10 +73,14 @@
                 <tr>
                     <td>${u.id}</td>
                     <td><a href="news?flag=find&id=${u.id}">${u.name}</a></td>
-                    <td>${u.insertTime}</td>
-                    <td>${u.currentTime}</td>
+                    <td><fmt:formatDate
+                            pattern="yyyy-MM-dd HH:mm"
+                            value="${u.insertTime}"/></td>
+                    <td><fmt:formatDate
+                            pattern="yyyy-MM-dd HH:mm"
+                            value="${u.currentTime}"/></td>
                     <td>
-                        <form action="info" method="post">
+                        <form action="man" method="post">
                             <input type="hidden" name="id" value="${u.id}">
                             <button name="flag" value="update" type="submit" class="btn btn-info">修改</button>
                             <button name="flag" value="delete" type="submit" class="btn btn-danger">删除</button>
@@ -88,5 +92,21 @@
         </div>
     </div>
 </div>
+<script>
+        function btn(){
+        $.ajax({
+            url:"index.php",
+            type:"post",
+            data:{username:username},
+            dataType:"json",
+            success:function(a){
+                alert(a)
+            },
+            error:function(e){
+                alert("错误");
+            }
+        });
+    }
+</script>
 </body>
 </html>

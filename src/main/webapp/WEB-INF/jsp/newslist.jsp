@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
     <link rel="stylesheet" href="resources/css/teacher.css">
+    <link rel="stylesheet" href="resources/css/newslist.css">
     <script src="resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
@@ -106,50 +107,61 @@
     </nav>
 
     <!--内容部分-->
+    <div class="new-content">
+        <h1>新闻</h1>
+    <table>
+        <thead>
+        <tr>
+            <td>新闻id</td>
+            <td>新闻名称</td>
+            <td>插入时间</td>
+            <td>修改时间</td>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach items="${news}" var="u" varStatus="v">
+        <tr>
+            <td>${u.id}</td>
+            <td><a href="news?flag=find&id=${u.id}">${u.name}</a></td>
 
-    <div class="Content_main_Out">
-        <div style="width: 100%" class="Content_main_in">
-            <ul>
-                <c:forEach items="${news}" var="u" varStatus="v">
-                    <li>
-                <span>发布时间：<fmt:formatDate
-                        pattern="yyyy-MM-dd HH:mm"
-                        value="${u.currentTime}"/></span>
-                    <a href="news?flag=find&id=${u.id}">${u.name}</a>
-                </span>
-                    </li>
-                </c:forEach>
-            </ul>
-        </div>
-    </div>
-    <!--内容部分结束-->
-    <nav class="footer">
-        <img src="resources/picture/footer.jpg">
-        <div class="footbar">
-            <div class="footbar-c"> @2018级软件工程专业3班 丰祎洁 web作业</div>
-        </div>
-    </nav>
-</div>
-<!--登录部分的js-->
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+                        <td><fmt:formatDate
+                                pattern="yyyy-MM-dd HH:mm"
+                                value="${u.insertTime}"/></td>
+                        <td><fmt:formatDate
+                                pattern="yyyy-MM-dd HH:mm"
+                                value="${u.currentTime}"/></td>
+                        </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+                <!--内容部分结束-->
+                <nav class="footer">
+                    <img src="resources/picture/footer.jpg">
+                    <div class="footbar">
+                        <div class="footbar-c"> @2018级软件工程专业3班 丰祎洁 web作业</div>
+                    </div>
+                </nav>
+            </div>
+            <!--登录部分的js-->
+            <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
 
-    $("div.fab").on({
-        mouseenter: function () {
-            $(this).children("div.fab-btn").children("a").children("i#b1").text("account_circle");
-        },
-        mouseleave: function () {
-            $(this).children("div.fab-btn").children("a").children("i#b1").text("arrow_drop_down_circle");
-        }
-    })
-    $(".kuai").on({
-        mouseenter: function () {
-            $(this).children("#tec-detil").slideDown(1000);
-        },
-        mouseleave: function () {
-            $(this).children("#tec-detil").slideUp(1000);
-        }
-    })
-</script>
-</body>
-</html>
+                $("div.fab").on({
+                    mouseenter: function () {
+                        $(this).children("div.fab-btn").children("a").children("i#b1").text("account_circle");
+                    },
+                    mouseleave: function () {
+                        $(this).children("div.fab-btn").children("a").children("i#b1").text("arrow_drop_down_circle");
+                    }
+                })
+                $(".kuai").on({
+                    mouseenter: function () {
+                        $(this).children("#tec-detil").slideDown(1000);
+                    },
+                    mouseleave: function () {
+                        $(this).children("#tec-detil").slideUp(1000);
+                    }
+                })
+            </script>
+            </body>
+            </html>

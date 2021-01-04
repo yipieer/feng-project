@@ -14,18 +14,19 @@ import java.io.IOException;
 @WebServlet("/listnew")
 public class ListNewsServlet extends HttpServlet {
     private NewsService newsService = ServiceFactory.getNewsService();
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String xwmc = req.getParameter("xwmc")==null?"":req.getParameter("xwmc");
-        if(xwmc.equals("")){
+        String xwmc = req.getParameter("xwmc") == null ? "" : req.getParameter("xwmc");
+        if (xwmc.equals("")) {
             req.setAttribute("news", newsService.listNewss());
-        }else{
+        } else {
             req.setAttribute("news", newsService.listNewss(xwmc));
         }
-
         req.getRequestDispatcher("/WEB-INF/jsp/mannews.jsp")
                 .forward(req, resp);
     }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //新闻查看

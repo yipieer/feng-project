@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 public class AccountServiceImpl implements AccountService {
  @Override
-    public boolean verification(Accounts accounts) {
+    public boolean AccountLogin(Accounts accounts) {
         String sql = "SELECT * FROM account WHERE username=? AND password=?";
         try (Connection connection = DataSourceUtils.getConnection();
              PreparedStatement st = connection.prepareStatement(sql)){

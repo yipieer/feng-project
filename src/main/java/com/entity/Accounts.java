@@ -24,10 +24,10 @@ public class Accounts {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Accounts accounts = (Accounts) o;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Accounts accounts = (Accounts) object;
         return Objects.equals(userName, accounts.userName) && Objects.equals(password, accounts.password);
     }
 
