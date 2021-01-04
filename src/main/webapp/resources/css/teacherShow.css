@@ -3,16 +3,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.right-title{
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-}
-.right-txt p{
-    text-indent: 2em;
-    color: black;
-}
 body, html {
     font-size: 100%;
     padding: 0;
@@ -22,6 +12,8 @@ body, html {
 
 .grid {
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 .grid li {
@@ -36,7 +28,7 @@ body, html {
 }
 
 .grid figure img {
-    width: 200px;
+    width: 150px;
     display: block;
     position: relative;
 }
@@ -82,4 +74,3 @@ body, html {
     color: white;
     text-decoration: none;
 }
-  

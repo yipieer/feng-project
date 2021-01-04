@@ -19,7 +19,6 @@ public class addNews extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         req.setCharacterEncoding("UTF-8");
         //得到标题
         String title = req.getParameter("name");

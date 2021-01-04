@@ -19,6 +19,8 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/teacherShow.css">
+    <script src="resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -83,14 +85,10 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="shown">新闻</a>
+                <a href="shown">新闻公告</a>
             </div>
         </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="shown">公告</a>
-            </div>
-        </div>
+
         <!--登录-->
         <div class="fab">
             <div class="fab-btn">
@@ -184,7 +182,7 @@
         <!-- 容纳公告和新闻-->
         <div class="container">
             <div class="newscontext">
-                <div class="title-x">新闻</div>
+                <div class="title-x">新闻公告</div>
                 <ul class="newsli">
                     <c:forEach items="${news}" var="u">
                         <li>
@@ -200,9 +198,34 @@
                 </ul>
             </div>
             <div class="newscontext">
-                <div class="title-x">公告</div>
+                <div class="title-x">教师简介</div>
                 <div>
-
+                    <ul class="grid cs-style-2">
+                        <li>
+                            <figure>
+                                <img src="resources/picture/t-wangbo.jpg" alt="img04">
+                                <figcaption>
+                                    <a href="Tolab1">923创新实验室</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/picture/lab2.png" alt="img04">
+                                <figcaption>
+                                    <a href="Tolab2">925移动开发实验室</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="resources/picture/lab3.jpg" alt="img04">
+                                <figcaption>
+                                    <a href="Tolab3">926实验室</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
