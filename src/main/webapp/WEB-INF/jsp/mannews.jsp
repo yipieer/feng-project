@@ -55,8 +55,11 @@
                 <%--用flag来看是点击的哪个按钮--%>
                 <input type="hidden" name="flag" value="">
                 <input type="hidden" name="id" value="">
-                <input value="" placeholder="请输入要搜索的内容" type="text" name="xwmc" id="xwmc">
-                <input type="submit" class="btn btn-info" value="搜索">
+                    <div class="serch">
+                        <input value="" placeholder="请输入要搜索的内容" type="text" name="xwmc" id="xwmc" class="form-control" aria-describedby="basic-addon1">
+                        <input type="submit" class="btn btn-info" value="搜索">
+                    </div>
+
             </form>
 
             <table>

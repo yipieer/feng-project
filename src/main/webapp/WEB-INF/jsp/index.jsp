@@ -74,7 +74,7 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">就业指南</a>
+                <a href="ToworkIndex">就业指南</a>
             </div>
             <div class="nav-list">
                 <ul>
@@ -205,23 +205,27 @@
                             <figure>
                                 <img src="resources/picture/t-wangbo.jpg" alt="img04">
                                 <figcaption>
-                                    <a href="Tolab1">923创新实验室</a>
+                                    <a href="Toteacher3">王波老师<br>
+                                        计算数学<br>软件开发</a>
                                 </figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="resources/picture/lab2.png" alt="img04">
+                                <img src="resources/picture/t-lily.jpg" alt="img04">
                                 <figcaption>
-                                    <a href="Tolab2">925移动开发实验室</a>
+                                    <a href="Toteacher2">李莉老师<br>
+                                        群智能优化<br>大型分布式计算</a>
                                 </figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="resources/picture/lab3.jpg" alt="img04">
+                                <img src="resources/picture/t-luo.png" alt="img04">
                                 <figcaption>
-                                    <a href="Tolab3">926实验室</a>
+                                    <a href="Toteacher2">罗嗣卿老师
+                                        <br>图像处理<br>软件服务与应用
+                                    </a>
                                 </figcaption>
                             </figure>
                         </li>
