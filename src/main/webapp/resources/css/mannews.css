@@ -80,7 +80,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: salmon 1px solid;
+    /*border: salmon 1px solid;*/
 }
 #xwmc{
     padding: 6px;
