@@ -213,3 +213,7 @@ div.showbase:hover img {
     /*text-align: right;*/
 
 }
+.newsli a{
+    padding: 0 100% 0 0;
+    color: rgb(00, 90, 00);
+}

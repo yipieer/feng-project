@@ -112,8 +112,8 @@
                     新闻编辑： ${news.editor}
                 </div>
                 <div class="a-nwes-time">
-                    插入时间：<fmt:formatDate value="${news.insertTime}" pattern="yyyy-MM-dd"/>
-                    修改时间：<fmt:formatDate value="${news.currentTime}" pattern="yyyy-MM-dd"/>
+                    插入时间：<fmt:formatDate value="${news.insertTime}" pattern="yyyy-MM-dd HH:mm"/>
+                    修改时间：<fmt:formatDate value="${news.currentTime}" pattern="yyyy-MM-dd HH:mm"/>
                 </div>
                 <div class="a-nwes-content">
                     ${news.content}
