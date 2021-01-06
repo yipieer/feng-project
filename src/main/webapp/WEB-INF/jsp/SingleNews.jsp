@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
     <link rel="stylesheet" href="resources/css/singlenews.css">
-    <title>Document</title>
+    <title>新闻</title>
 </head>
 <body>
 <div class="main">

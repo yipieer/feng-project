@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/teacherShow.css">
     <script src="resources/js/modernizr.custom.js"></script>
-    <title>Document</title>
+    <title>欢迎来到东北林业大学软件工程专业</title>
 </head>
 <body>
 <div class="main">

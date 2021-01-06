@@ -16,22 +16,6 @@
     <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/mannews.css">
 
-<%--    <script>--%>
-<%--        function btn(){--%>
-<%--            $.ajax({--%>
-<%--                url:"index.php",--%>
-<%--                type:"post",--%>
-<%--                data:{username:username},--%>
-<%--                dataType:"json",--%>
-<%--                success:function(a){--%>
-<%--                    alert(a)--%>
-<%--                },--%>
-<%--                error:function(e){--%>
-<%--                    alert("错误");--%>
-<%--                }--%>
-<%--            });--%>
-<%--        }--%>
-<%--    </script>--%>
 </head>
 <body>
 

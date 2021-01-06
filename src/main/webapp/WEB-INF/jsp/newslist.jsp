@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="resources/css/teacher.css">
     <link rel="stylesheet" href="resources/css/newslist.css">
     <script src="resources/js/modernizr.custom.js"></script>
-    <title>Document</title>
+    <title>新闻列表</title>
 </head>
 <body>
 <div class="main">

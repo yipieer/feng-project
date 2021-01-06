@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
     <script src="../../resources/js/modernizr.custom.js"></script>
-    <title>Document</title>
+    <title>就业指南</title>
 </head>
 <body>
 <div class="main">

@@ -20,7 +20,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
-    <title>Document</title>
+    <title>专业简介</title>
 </head>
 <body>
 <div class="main">

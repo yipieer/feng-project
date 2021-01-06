@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="resources/css/introduce.css">
     <link rel="stylesheet" href="resources/css/lab.css">
     <script src="resources/js/modernizr.custom.js"></script>
-    <title>Document</title>
+    <title>926实验室</title>
 </head>
 <body>
 <div class="main">
