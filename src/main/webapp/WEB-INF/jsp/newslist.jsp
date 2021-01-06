@@ -36,7 +36,7 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="ToIndex">首页</a>
+                <a href="index">首页</a>
             </div>
         </div>
         <div class="navi">
@@ -76,29 +76,25 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">就业指南</a>
+                <a href="ToworkIndex">就业指南</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">就业方向指南</a></li>
-                    <li><a href="">就业前景指南</a></li>
+                    <li><a href="Towork1">就业方向指南</a></li>
+                    <li><a href="Towork2">就业前景指南</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">新闻</a>
+                <a href="shown">新闻公告</a>
             </div>
         </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="">公告</a>
-            </div>
-        </div>
+
         <!--登录-->
         <div class="fab">
             <div class="fab-btn">
-                <a>
+                <a href="admin">
                     <i class="material-icons" id="b1">arrow_drop_down_circle</i>
                 </a>
 

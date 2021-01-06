@@ -20,7 +20,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
-    <link rel="stylesheet" href="resources/css/teacher.css">
+    <link rel="stylesheet" href="resources/css/work.css">
     <script src="../../resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
@@ -35,7 +35,7 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="ToIndex">首页</a>
+                <a href="index">首页</a>
             </div>
         </div>
         <div class="navi">
@@ -75,29 +75,25 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">就业指南</a>
+                <a href="ToworkIndex">就业指南</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">就业方向指南</a></li>
-                    <li><a href="">就业前景指南</a></li>
+                    <li><a href="Towork1">就业方向指南</a></li>
+                    <li><a href="Towork2">就业前景指南</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">新闻</a>
+                <a href="shown">新闻公告</a>
             </div>
         </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="">公告</a>
-            </div>
-        </div>
+
         <!--登录-->
         <div class="fab">
             <div class="fab-btn">
-                <a>
+                <a href="admin">
                     <i class="material-icons" id="b1">arrow_drop_down_circle</i>
                 </a>
 
@@ -105,34 +101,60 @@
         </div>
     </nav>
     <div class="banner">
-        <img src="resources/picture/banner3.jpg">
+        <img src="resources/picture/banner4.jpg">
     </div>
     <div class="nei">
         <nav class="lefe-bar">
             <div class="left-title">
-                <div>教师队伍</div>
-                <div>Teachers</div>
+                <div>就业指南</div>
+                <div>Job Guide</div>
             </div>
             <ul>
-                <li><a href="Toteacher1"><span>教授</span></a></li>
-                <li><a href="Toteacher2"><span>副教授</span></a></li>
-                <li><a href="Toteacher3"><span>讲师</span></a></li>
+                <li><a href="Towork1"><span>就业方向指南</span></a></li>
+                <li><a href="Towork2"><span>就业前景指南</span></a></li>
             </ul>
         </nav>
         <!--内容部分-->
         <div class="right-content">
-            <div class="right-title">教授</div>
+            <div class="right-title">就业方向指南</div>
             <div class="right-txt">
-                <div class="kuai">
-                    <div class="teacherlist">
-                        <div class="tec-pic"
-                             style="background: url(resources/picture/t-sujianmin.jpg);background-position: 50%;background-size: 90%"></div>
-                        <div class="tec-txt">苏建民</div>
-                    </div>
-                    <div class="tec-detil">
-                        苏健民，教授，硕士，硕士生导师，软件工程一级学科带头人，省计算机学会嵌入式专委会委员。主要研究方向：自动控制、信号与信息处理。主持或参加科研、教学项目11项，科研与教学获奖11项，出版教材2部，发表论文32篇。
-                    </div>
-                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>就业方向</td>
+                        <td>详细介绍</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="biaozhi">
+                            软件工程师
+                        </td>
+                        <td>
+                            重点关注项目的经验和学习知识的能力，能否利用软件工程专业知识来解决问题，根据岗位不同，对软件工程师的要求也有所不同。具体能力要根据岗位和自己的兴趣爱好选定自己的职业规划方向，一方面要详细了解软件工程师的要求，可以关注企业的招聘信息；一方面自己要贮备通用的知识技能，广泛阅读相关的计算机材料对自己以后的发展大有帮助。可以确定的是软件工程师的前途在未来的发展依然是不断升温的职业，比较需要有技术和良好前景的专业之一。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="biaozhi">
+                            项目经理
+                        </td>
+                        <td>
+                            企业建立以项目经理责任制为核心，对项目实行质量、安全、进度、成本管理的责任保证体系和全面提高项目管理水平设立的重要管理岗位。它要负责处理所有事务性质的工作。也可称为“执行制作人”（Executive
+                            Producer）。项目经理是为项目的成功策划和执行负总责的人。项目经理是项目团队的领导者，项目经理首要职责是在预算范围内按时优质地领导项目小组完成全部项目工作内容，并使客户满意。为此项目经理必须在一系列的项目计划、组织和控制活动中做好领导工作，从而实现项目目标。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="biaozhi">
+                            软件开发工程师
+                        </td>
+                        <td>
+                            软件开发工程师是从事软件开发相关工作的人员的统称。
+                            软件开发工程师的技术要求是比较全面的，除了最基础的编程语言（C语言/C++/JAVA等）、数据库技术（SQL/ORACLE/DB2等）、.NET平台技术、C#、C/S
+                            B/S程序开发，还有诸多如JAVA SCRIPT、AJAX、HIBERNATE、SPRING、J2EE、WEB SERVICE、STRUTS等前沿技术。
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -154,14 +176,6 @@
         },
         mouseleave: function () {
             $(this).children("div.fab-btn").children("a").children("i#b1").text("arrow_drop_down_circle");
-        }
-    })
-    $(".kuai").on({
-        mouseenter: function () {
-            $(this).children(".tec-detil").slideDown(1000);
-        },
-        mouseleave: function () {
-            $(this).children(".tec-detil").slideUp(1000);
         }
     })
 </script>

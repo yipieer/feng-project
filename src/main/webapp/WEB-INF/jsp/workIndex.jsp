@@ -20,7 +20,6 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
-    <link rel="stylesheet" href="resources/css/teacher.css">
     <script src="../../resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
@@ -35,7 +34,7 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="ToIndex">首页</a>
+                <a href="index">首页</a>
             </div>
         </div>
         <div class="navi">
@@ -75,29 +74,25 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">就业指南</a>
+                <a href="ToworkIndex">就业指南</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">就业方向指南</a></li>
-                    <li><a href="">就业前景指南</a></li>
+                    <li><a href="Towork1">就业方向指南</a></li>
+                    <li><a href="Towork2">就业前景指南</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">新闻</a>
+                <a href="shown">新闻公告</a>
             </div>
         </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="">公告</a>
-            </div>
-        </div>
+
         <!--登录-->
         <div class="fab">
             <div class="fab-btn">
-                <a>
+                <a href="admin">
                     <i class="material-icons" id="b1">arrow_drop_down_circle</i>
                 </a>
 
@@ -105,34 +100,31 @@
         </div>
     </nav>
     <div class="banner">
-        <img src="resources/picture/banner3.jpg">
+        <img src="resources/picture/banner4.jpg">
     </div>
     <div class="nei">
         <nav class="lefe-bar">
             <div class="left-title">
-                <div>教师队伍</div>
-                <div>Teachers</div>
+                <div>就业指南</div>
+                <div>Job Guide</div>
             </div>
             <ul>
-                <li><a href="Toteacher1"><span>教授</span></a></li>
-                <li><a href="Toteacher2"><span>副教授</span></a></li>
-                <li><a href="Toteacher3"><span>讲师</span></a></li>
+                <li><a href="Towork1"><span>就业方向指南</span></a></li>
+                <li><a href="Towork2"><span>就业前景指南</span></a></li>
             </ul>
         </nav>
         <!--内容部分-->
         <div class="right-content">
-            <div class="right-title">教授</div>
+            <div class="right-title">就业指南</div>
             <div class="right-txt">
-                <div class="kuai">
-                    <div class="teacherlist">
-                        <div class="tec-pic"
-                             style="background: url(resources/picture/t-sujianmin.jpg);background-position: 50%;background-size: 90%"></div>
-                        <div class="tec-txt">苏建民</div>
-                    </div>
-                    <div class="tec-detil">
-                        苏健民，教授，硕士，硕士生导师，软件工程一级学科带头人，省计算机学会嵌入式专委会委员。主要研究方向：自动控制、信号与信息处理。主持或参加科研、教学项目11项，科研与教学获奖11项，出版教材2部，发表论文32篇。
-                    </div>
-                </div>
+                <p>
+                    软件工程是研究大规模软件开发方法、工具和管理的一门工程科学，其特点是按工程化的原则和方法来组织和规范软件开发过程，软件工程技术则主要研究与软件开发各个工作流程相关的、先进实用的软件开发方法、技术和工具；软件工程技术专业面向国民经济电子信息化建设和发展的需要，培养具有扎实的软件理论和知识基础，对整个软件过程有整体了解、掌握软件工程领域的前沿技术，具有国际竞争能力，能从事大型软件项目系统分析、设计、编程、测试和软件项目管理等工作的复合型、实用型的高层次软件工程技术人才；主要涵盖软件工程学科和计算机学科的基本理论、基础知识、基本技能的研究，软件的分析与开发，计算机应用系统、计算机网络系统的设计与开发等专业内容。
+
+                    <img style="float: left;padding: 10px;width: 150px" src="resources/picture/dong.gif"/>
+                <p>
+                <p>本专业学生毕业后可在计算机软件专业公司﹑信息咨询公司﹑以及金融等其它独资、合资企业工作。</p>
+                <p>毕业后主要在新能源、计算机软件、互联网等行业工作</p>
+                <p>毕业后主要从事软件工程师、项目经理、软件开发工程师等工作</p>
             </div>
         </div>
     </div>

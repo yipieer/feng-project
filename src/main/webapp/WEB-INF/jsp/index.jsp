@@ -78,8 +78,8 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">就业方向指南</a></li>
-                    <li><a href="">就业前景指南</a></li>
+                    <li><a href="Towork1">就业方向指南</a></li>
+                    <li><a href="Towork2">就业前景指南</a></li>
                 </ul>
             </div>
         </div>

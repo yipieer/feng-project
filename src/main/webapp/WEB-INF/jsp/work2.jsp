@@ -20,7 +20,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/introduce.css">
-    <link rel="stylesheet" href="resources/css/teacher.css">
+    <link rel="stylesheet" href="resources/css/work.css">
     <script src="../../resources/js/modernizr.custom.js"></script>
     <title>Document</title>
 </head>
@@ -35,7 +35,7 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="ToIndex">首页</a>
+                <a href="index">首页</a>
             </div>
         </div>
         <div class="navi">
@@ -75,29 +75,25 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">就业指南</a>
+                <a href="ToworkIndex">就业指南</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">就业方向指南</a></li>
-                    <li><a href="">就业前景指南</a></li>
+                    <li><a href="Towork1">就业方向指南</a></li>
+                    <li><a href="Towork2">就业前景指南</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">新闻</a>
+                <a href="shown">新闻公告</a>
             </div>
         </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="">公告</a>
-            </div>
-        </div>
+
         <!--登录-->
         <div class="fab">
             <div class="fab-btn">
-                <a>
+                <a href="admin">
                     <i class="material-icons" id="b1">arrow_drop_down_circle</i>
                 </a>
 
@@ -105,34 +101,57 @@
         </div>
     </nav>
     <div class="banner">
-        <img src="resources/picture/banner3.jpg">
+        <img src="resources/picture/banner4.jpg">
     </div>
     <div class="nei">
         <nav class="lefe-bar">
             <div class="left-title">
-                <div>教师队伍</div>
-                <div>Teachers</div>
+                <div>就业指南</div>
+                <div>Job Guide</div>
             </div>
             <ul>
-                <li><a href="Toteacher1"><span>教授</span></a></li>
-                <li><a href="Toteacher2"><span>副教授</span></a></li>
-                <li><a href="Toteacher3"><span>讲师</span></a></li>
+                <li><a href="Towork1"><span>就业方向指南</span></a></li>
+                <li><a href="Towork2"><span>就业前景指南</span></a></li>
             </ul>
         </nav>
         <!--内容部分-->
         <div class="right-content">
-            <div class="right-title">教授</div>
+            <div class="right-title">就业前景指南</div>
             <div class="right-txt">
-                <div class="kuai">
-                    <div class="teacherlist">
-                        <div class="tec-pic"
-                             style="background: url(resources/picture/t-sujianmin.jpg);background-position: 50%;background-size: 90%"></div>
-                        <div class="tec-txt">苏建民</div>
-                    </div>
-                    <div class="tec-detil">
-                        苏健民，教授，硕士，硕士生导师，软件工程一级学科带头人，省计算机学会嵌入式专委会委员。主要研究方向：自动控制、信号与信息处理。主持或参加科研、教学项目11项，科研与教学获奖11项，出版教材2部，发表论文32篇。
-                    </div>
-                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>就业前景</td>
+                        <td>详细介绍</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="biaozhi">
+                            百度
+                        </td>
+                        <td>
+                            百度（纳斯达克：BIDU）是全球最大的中文搜索引擎，中国最大的以信息和知识为核心的互联网综合服务公司，全球领先的人工智能平台型公司。百度愿景是：成为最懂用户，并能帮助人们成长的全球顶级高科技公司。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="biaozhi">
+                            小米
+                        </td>
+                        <td>
+                            小米科技有限责任公司成立于2010年3月3日，是一家专注于智能硬件和电子产品研发的全球化移动互联网企业，同时也是一家专注于高端智能手机、互联网电视及智能家居生态链建设的创新型科技企业。小米公司创造了用互联网模式开发手机操作系统、发烧友参与开发改进的模式。2018年7月9日在香港交易所主板挂牌上市，成为港交所上市制度改革后首家采用不同投票权架构的上市企业。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="biaozhi">
+                            腾讯
+                        </td>
+                        <td>
+                            深圳市腾讯计算机系统有限公司成立于1998年11月，由马化腾、张志东、许晨晔、陈一丹、曾李青五位创始人共同创立。是中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -154,14 +173,6 @@
         },
         mouseleave: function () {
             $(this).children("div.fab-btn").children("a").children("i#b1").text("arrow_drop_down_circle");
-        }
-    })
-    $(".kuai").on({
-        mouseenter: function () {
-            $(this).children(".tec-detil").slideDown(1000);
-        },
-        mouseleave: function () {
-            $(this).children(".tec-detil").slideUp(1000);
         }
     })
 </script>

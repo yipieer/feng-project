@@ -49,53 +49,49 @@
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">实验室</a>
+                <a href="Tolabindex">实验室</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">923创新实验室</a></li>
-                    <li><a href="">925移动开发实验室</a></li>
-                    <li><a href="">926实验室</a></li>
+                    <li><a href="Tolab1">923创新实验室</a></li>
+                    <li><a href="Tolab2">925移动开发实验室</a></li>
+                    <li><a href="Tolab3">926实验室</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">教师队伍</a>
+                <a href="Totindex">教师队伍</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">教授</a></li>
-                    <li><a href="">副教授</a></li>
-                    <li><a href="">讲师</a></li>
+                    <li><a href="Toteacher1">教授</a></li>
+                    <li><a href="Toteacher2">副教授</a></li>
+                    <li><a href="Toteacher3">讲师</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">就业指南</a>
+                <a href="ToworkIndex">就业指南</a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li><a href="">就业方向指南</a></li>
-                    <li><a href="">就业前景指南</a></li>
+                    <li><a href="Towork1">就业方向指南</a></li>
+                    <li><a href="Towork2">就业前景指南</a></li>
                 </ul>
             </div>
         </div>
         <div class="navi">
             <div class="nav-title">
-                <a href="">新闻</a>
+                <a href="shown">新闻公告</a>
             </div>
         </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="">公告</a>
-            </div>
-        </div>
+
         <!--登录-->
         <div class="fab">
             <div class="fab-btn">
-                <a>
+                <a href="admin">
                     <i class="material-icons" id="b1">arrow_drop_down_circle</i>
                 </a>
 
