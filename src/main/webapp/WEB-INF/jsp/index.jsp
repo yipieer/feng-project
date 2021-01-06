@@ -185,15 +185,16 @@
                 <div class="title-x">新闻公告</div>
                 <ul class="newsli">
                     <c:forEach items="${news}" var="u">
-                        <li>
-                            <span>发布时间：<fmt:formatDate
-                                    pattern="yyyy-MM-dd HH:mm"
-                                    value="${u.insertTime}"/></span>
-                            <br>
-                            <a href="news?flag=find&id=${u.id}">${u.name}</a>
-                            <span>${u.name}</span>
-                        </li>
+                        <li class="news-datil">
 
+                            <a href="news?flag=find&id=${u.id}">${u.name}</a>
+                            <br>
+                            <div class="new-time">
+                                <span >发布时间：<fmt:formatDate
+                                        pattern="yyyy-MM-dd HH:mm"
+                                        value="${u.insertTime}"/></span>
+                            </div>
+                        </li>
                     </c:forEach>
                 </ul>
             </div>

@@ -1,0 +1,32 @@
+.news-all{
+    display: flex;
+    flex-direction: column;
+    /*border: salmon 1px solid;*/
+    width: 100%;
+    justify-content: center;
+}
+.a-nwes{
+    display: flex;
+    flex-direction: column;
+    /*border: salmon 1px solid;*/
+    width: 100%;
+    justify-content: center;
+}
+.a-news-title{
+    /*font-weight: bold;*/
+    font-size: 3em;
+    /*border: aqua 1px solid;*/
+    text-align: center;
+}
+.a-nwes-time{
+    text-align: center;
+    font-size: 1.3em;
+}
+.a-nwes-content{
+    padding: 20px 50px;
+    font-size: 1.2em;
+}
+.a-news-editor{
+    font-size: 1.3em;
+    text-align: center;
+}
