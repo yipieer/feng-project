@@ -204,6 +204,10 @@ div.showbase:hover img {
     background: rgb(00, 90, 00);
     color: white;
 }
+.news-datil:hover a{
+    color: white;
+    text-decoration: none;
+}
 .new-time{
     /*border: 1px salmon solid;*/
     /*text-align: right;*/

@@ -131,8 +131,7 @@
     <nav class="footer">
         <img src="resources/picture/footer.jpg">
         <div class="footbar">
-            <div class="footbar-c">@2018级软件工程专业3班 丰祎洁 web作业<br>
-            指导教师：王波老师</div>
+            <div class="footbar-c">@2018级软件工程专业3班 丰祎洁</div>
         </div>
     </nav>
 </div>

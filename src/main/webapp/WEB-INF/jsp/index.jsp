@@ -185,15 +185,17 @@
                 <div class="title-x">新闻公告</div>
                 <ul class="newsli">
                     <c:forEach items="${news}" var="u">
+                        <a href="news?flag=find&id=${u.id}">
                         <li class="news-datil">
-
-                            <a href="news?flag=find&id=${u.id}">${u.name}</a>
+                                ${u.name}
+<%--                            <a href="news?flag=find&id=${u.id}">${u.name}</a>--%>
                             <br>
                             <div class="new-time">
                                 <span >发布时间：<fmt:formatDate
                                         pattern="yyyy-MM-dd HH:mm"
                                         value="${u.insertTime}"/></span>
                             </div>
+                        </a>
                         </li>
                     </c:forEach>
                 </ul>
@@ -239,8 +241,7 @@
     <nav class="footer">
         <img src="resources/picture/footer.jpg">
         <div class="footbar">
-            <div class="footbar-c">@2018级软件工程专业3班 丰祎洁 web作业<br>
-                指导教师：王波老师</div>
+            <div class="footbar-c">@2018级软件工程专业3班 丰祎洁</div>
         </div>
     </nav>
 </div>
