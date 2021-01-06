@@ -17,16 +17,20 @@
     font-size: 3em;
     /*border: aqua 1px solid;*/
     text-align: center;
+    padding: 20px;
 }
 .a-nwes-time{
     text-align: center;
     font-size: 1.3em;
+    padding: 20px;
 }
 .a-nwes-content{
     padding: 20px 50px;
     font-size: 1.2em;
+    text-indent: 2em;
 }
 .a-news-editor{
     font-size: 1.3em;
     text-align: center;
+    padding: 20px;
 }

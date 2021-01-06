@@ -116,7 +116,7 @@
                     修改时间：<fmt:formatDate value="${news.currentTime}" pattern="yyyy-MM-dd"/>
                 </div>
                 <div class="a-nwes-content">
-                    新闻内容：${news.content}
+                    ${news.content}
                 </div>
 
             </div>
