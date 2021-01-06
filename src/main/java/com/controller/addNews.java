@@ -25,7 +25,7 @@ public class addNews extends HttpServlet {
         //得到作者
         String editor = req.getParameter("editor");
         //得到内容
-        String content = req.getParameter("content");
+        String content = req.getParameter("data");
         //若id为空，为首次添加
         if (req.getParameter("id").equals("") ) {
             News news = new News(title, editor, content);

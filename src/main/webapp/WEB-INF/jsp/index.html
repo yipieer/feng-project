@@ -1,141 +1,244 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--图标-->
-    <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../resources/css/index.css">
-    <link rel="stylesheet" href="../../resources/css/introduce.css">
-    <link rel="stylesheet" href="../../resources/css/singlenews.css">
-    <title>Document</title>
+    <title>编辑</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../resources/layui/css/layui.css">
+    <script src="../../resources/layui/layui.js"></script>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        a, a:link, a:hover, a:visited {
+            display: block;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "微软雅黑", "宋体",serif;
+            background-color: #ededed;
+        }
+
+        .edit-container {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .edit-card {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            width: 100%;
+        }
+
+        .edit-card input[type=submit] {
+            font-size: 16px;
+            line-height: 24px;
+            width: 50px;
+            background-color: #00a200;
+            color: white;
+            border-radius: 5px;
+            border-color: #00a200;
+        }
+
+        .edit-card .title {
+            display: block;
+            font-size: 22px;
+            line-height: 40px;
+        }
+
+        .edit-card .title input {
+            width: 500px;
+            margin-left: 20px;
+            font-size: 18px;
+            border: none;
+            border-bottom: 2px solid #003cc4;
+        }
+    </style>
 </head>
 <body>
-<div class="main">
-    <nav class="topbar">
-        <div class="logo">
-            <img src="../../resources/picture/logo.png">
-        </div>
-        <div class="logo1">
-            <img src="../../resources/picture/logo1.png">
-        </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="index">首页</a>
-            </div>
-        </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="Tob1">专业介绍</a>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li><a href="Tob1">专业简介</a></li>
-                    <li><a href="Tob2">方向简介</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="Tolabindex">实验室</a>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li><a href="Tolab1">923创新实验室</a></li>
-                    <li><a href="Tolab2">925移动开发实验室</a></li>
-                    <li><a href="Tolab3">926实验室</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="Totindex">教师队伍</a>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li><a href="Toteacher1">教授</a></li>
-                    <li><a href="Toteacher2">副教授</a></li>
-                    <li><a href="Toteacher3">讲师</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="ToworkIndex">就业指南</a>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li><a href="Towork1">就业方向指南</a></li>
-                    <li><a href="Towork2">就业前景指南</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="navi">
-            <div class="nav-title">
-                <a href="shown">新闻公告</a>
-            </div>
-        </div>
 
-        <!--登录-->
-        <div class="fab">
-            <div class="fab-btn">
-                <a href="admin">
-                    <i class="material-icons" id="b1">arrow_drop_down_circle</i>
-                </a>
 
-            </div>
-        </div>
-    </nav>
-    <div class="banner">
-        <img src="../../resources/picture/banner5.jpg">
-    </div>
-    <div class="nei">
-        <div class="news-all">
-            <div class="a-nwes">
-                <div class="a-news-title">
-                    新闻名字： lalal
-                </div>
-                <div class="a-nwes-time">
-                    <div class="ttt">
-                    插入时间：woshishijian
-                    修改时间：woshishijian
-                    </div>
-                </div>
-                <div class="a-nwes-content">
-                    新闻内容：woshinirong
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-            </div>
-        </div>
-    </div>
-    <nav class="footer">
-        <img src="../../resources/picture/footer.jpg">
-        <div class="footbar">
-            <div class="footbar-c"> xxxxxxxxxx</div>
-        </div>
-    </nav>
-</div>
-<!--登录部分的js-->
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-
-    $("div.fab").on({
-        mouseenter: function () {
-            $(this).children("div.fab-btn").children("a").children("i#b1").text("account_circle");
-        },
-        mouseleave: function () {
-            $(this).children("div.fab-btn").children("a").children("i#b1").text("arrow_drop_down_circle");
+    <base href="/2018214519/">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-    })
+
+        a, a:link, a:hover, a:visited {
+            display: block;
+            text-decoration: none;
+        }
+
+        .header {
+            position: relative;
+            display: flex;
+            width: 100%;
+            /*height: 100px;*/
+            background: #002147;
+        }
+
+        .header img {
+            margin: 10px 20px 10px 120px ;
+        }
+
+        .header .nav {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .header .nav .nav-level {
+            display: block;
+        }
+
+        .header .nav a {
+            line-height: 40px;
+            font-size: 16px;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+        }
+
+        .header .nav .nav-level .base-nav a {
+            width: 120px;
+        }
+
+        .header .nav .nav-level .more-nav a {
+            min-width: 120px;
+        }
+
+        .header .nav a:active {
+            background-color: #00319d;
+        }
+
+        .header .nav .nav-level .more-nav {
+            position: absolute;
+            z-index: 100;
+            display: none;
+        }
+
+        .header .nav .nav-level:hover .more-nav {
+            display: block;
+            background: #002771;
+        }
+
+        .header .nav .nav-level .more-nav a:hover {
+            background-color: #00319d;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <a href="index"><img src="img/3.png" alt="logo"></a>
+    <div class="nav">
+        <div class="nav-level">
+            <div class="base-nav">
+                <a href="jsp/professional/proIntro.jsp">专业介绍</a>
+            </div>
+            <div class="more-nav">
+                <a href="jsp/professional/proIntro.jsp">专业简介</a>
+                <a href="jsp/professional/directionIntro.jsp">方向简介</a>
+            </div>
+        </div>
+        <div class="nav-level">
+            <div class="base-nav">
+                <a href="jsp/teacher/list/professor.jsp">教师队伍</a>
+            </div>
+            <div class="more-nav">
+                <a href="jsp/teacher/list/professor.jsp">教授</a>
+                <a href="jsp/teacher/list/associateProfessor.jsp">副教授</a>
+                <a href="jsp/teacher/list/lecturer.jsp">讲师</a>
+            </div>
+        </div>
+        <div class="nav-level">
+            <div class="base-nav">
+                <a href="jsp/laboratory/内燃机燃烧学国家重点实验室.jsp">实验室</a>
+            </div>
+            <div class="more-nav">
+                <a href="jsp/laboratory/内燃机燃烧学国家重点实验室.jsp">内燃机燃烧学国家重点实验室</a>
+                <a href="jsp/laboratory/精密测试技术及仪器国家重点实验室.jsp">精密测试技术及仪器国家重点实验室</a>
+            </div>
+        </div>
+        <div class="nav-level">
+            <div class="base-nav">
+                <a href="jsp/work/list.jsp">就业指南</a>
+            </div>
+        </div>
+        <div class="nav-level">
+            <div class="base-nav">
+                <a href="list?kind=1">新闻</a>
+            </div>
+        </div>
+        <div class="nav-level">
+            <div class="base-nav">
+                <a href="list?kind=2">通知</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<div class="edit-container">
+    <div class="edit-card">
+        <form action="admin/add" method="post">
+            <span class="title">标题<input type="text" name="title" required></span>
+
+            <textarea id="demo" style="display: none">
+                lalalala
+            </textarea>
+            <input id="submit" type="submit" value="提交">
+            <input type="hidden" name="kind" value="1">
+            <input id="data" type="hidden" name="data" value="">
+        </form>
+    </div>
+</div>
+<script>
+    let content, layedit;
+    layui.use('layedit', function(){
+        layedit = layui.layedit;
+        content = layedit.build('demo', {
+            height: 600, tool: [
+                'strong' //加粗
+                ,'italic' //斜体
+                ,'underline' //下划线
+                ,'del' //删除线
+
+                ,'|' //分割线
+
+                ,'left' //左对齐
+                ,'center' //居中对齐
+                ,'right' //右对齐
+                ,'link' //超链接
+                ,'unlink' //清除链接
+                ,'face' //表情
+            ]
+        });
+    });
+    $(function () {
+        $("input:submit").click(function () {
+            $("#data").val(layedit.getContent(content))
+        });
+        $("textarea").html('')
+    });
 </script>
 </body>
 </html>
